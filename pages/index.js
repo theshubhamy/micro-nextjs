@@ -61,17 +61,17 @@ function HomePage({ data, error }) {
           {/* <Header
             carousel={data.additional && data.additional.homePage.carousel}
           /> */}
-          <LandingBanner/>
-      
+          <LandingBanner />
+
           {/* <OfferingServices /> */}
-          
+
           <PrintingCategory />
           <FeatureItem />
           {/* <AboutSection />
           <PrintCategories />
         
           <ServiceSection /> */}
-          
+
           {/* <AvailableFeatures /> */}
           {/* <SubCategoryList categoryList={data.subCategory} /> */}
           <CategoryList categoryList={data.category} />

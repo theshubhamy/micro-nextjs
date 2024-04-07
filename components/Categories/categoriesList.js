@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 import { A11y, Autoplay } from "swiper";
 import "swiper/css";
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -39,37 +40,22 @@ function CategoryList(props) {
             <div className="col-lg-8 d-flex">
               {props.categoryList &&
                 props.categoryList.map((category, index) => (
-                  // <SwiperSlide key={category._id}>
-                  /* </SwiperSlide> */
-                  <>
-                    <div
-                      className="col-lg-3"
-                      key={category._id}
-                    >
-                      <a
-                        href="#"
-                        className=""
-                      >
-                        <div className="category-card-div">
-                          <div className="category-imgs-div">
-                            <img
-                              src={category.icon[0]?.url}
-                              alt={category.name}
-                              className="category-imgs"
-                            />
-                          </div>
-                          <div className="category-name-div">
-                            <p className="category-name">{category.name}</p>
-                          </div>
+                  <div className="col-lg-3" key={(index + 1).toString()}>
+                    <a href="#" className="">
+                      <div className="category-card-div">
+                        <div className="category-imgs-div">
+                          <img
+                            src={category.icon[0]?.url}
+                            alt={category.name}
+                            className="category-imgs"
+                          />
                         </div>
-                      </a>
-                    </div>
-                    {/* <Category
-                    name={category.name}
-                    slug={category.slug}
-                    img={category.icon[0]?.url}
-                  /> */}
-                  </>
+                        <div className="category-name-div">
+                          <p className="category-name">{category.name}</p>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
                 ))}
             </div>
           </div>
