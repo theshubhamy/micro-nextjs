@@ -1,0 +1,341 @@
+.all-container-div {
+  margin-top: 80px;
+  margin-bottom: 80px;
+}
+/* blog-item */
+.blog-item {
+  cursor: pointer;
+  margin-bottom: 30px;
+}
+.blog-main {
+  display: flex;
+}
+.blog-thumb {
+  margin-right: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+.blog-thumb img {
+  flex-shrink: 0;
+  max-width: 400px;
+  height: auto;
+  border-radius: 30px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.blog-item:hover .blog-thumb img {
+  transform: translateZ(0) scale(1.05);
+}
+.blog-infor {
+  /* border: 1px solid black; */
+}
+.blog-tag {
+  border-radius: 9999px;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+.bg-green {
+  background-color: rgba(210, 239, 154, 1); /* This sets the background color */
+}
+.blog-title,
+.heading6 {
+  font-size: 20px;
+  line-height: 28px;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+.blog-desc {
+  font-size: 18px;
+  line-height: 28px;
+  font-weight: 400;
+}
+.blog-item:hover .blog-title {
+  text-decoration: underline;
+}
+/* ----------- */
+/* RECENT BLOG POSTS */
+.recent-blog-post-div {
+  display: flex;
+  margin-bottom: 20px;
+}
+.recent-post-blog-img-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 10px;
+}
+
+.recent-post-blog-img-div img {
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+.recent-blog-tag {
+  border-radius: 9999px;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  font-size: 10px;
+}
+.recent-blog-title {
+  font-size: 12px;
+  font-weight: 500;
+  text-transform: capitalize;
+}
+
+
+/*  BLOG DETAILS PAGE */
+
+.blog-details-bg-img{
+  width: 100vw !important;
+}
+.heading3 {
+  font-size: 36px;
+  line-height: 40px;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+.heading4 {
+  font-size: 30px;
+  line-height: 42px;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+.body1 {
+  font-size: 18px;
+  line-height: 28px;
+  font-weight: 400;
+}
+/* .blog.default .list-blog .blog-item */
+/* .blog.default .list-blog .blog-item .blog-thumb {
+  aspect-ratio: 3/2;
+}
+
+.blog.default .list-blog .blog-item .blog-thumb img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+} */
+
+/* ABOUT US STYLES */
+
+.small-height {
+  margin: 10px;
+  width: 95%;
+  height: 200px;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.large-height {
+  margin: 10px;
+  width: 95%;
+  border-radius: 10px;
+  height: 320px !important;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+/* Add any additional styles for the right column content as needed */
+.right-column-content {
+  padding: 40px 10px 20px 40px !important;
+}
+
+.small-title {
+  font-size: 18px;
+  letter-spacing: 1.5px;
+  color: #4a8bed !important;
+}
+
+.big-title {
+  font-size: 28px;
+  font-weight: bold;
+  margin: 20px 0;
+}
+
+.abt-repair-service-desc-1 {
+  font-size: 18px;
+  margin-top: 40px !important;
+  letter-spacing: 0.5px;
+}
+.abt-repair-service-desc-2 {
+  font-size: 18px;
+  margin-top: 20px !important;
+  letter-spacing: 0.5px;
+}
+/* a {
+  text-decoration: none;
+  color: #4a8bed; 
+} */
+
+.abt-repair-service-div {
+  margin-top: 20px;
+}
+
+.abt-repair-service-div ul {
+  list-style-type: none; /* Remove default bullet points */
+  padding: 0;
+}
+
+.abt-repair-service-div ul li {
+  position: relative;
+  padding-left: 30px; /* Adjust the spacing between the image and text */
+  margin-bottom: 10px; /* Adjust the vertical spacing between list items */
+  font-size: 18px;
+}
+
+.abt-repair-service-div ul li:before {
+  content: "";
+  display: inline-block;
+  width: 16px; /* Set the width of the image */
+  height: 16px; /* Set the height of the image */
+  background: url("https://cdn-icons-png.flaticon.com/512/1828/1828640.png")
+    no-repeat; /* Add your image URL */
+  background-size: cover; /* Scale the image to fit the box */
+  position: absolute;
+  left: 0;
+  top: 4px; /* Adjust the vertical alignment of the image */
+}
+
+.call-now-button {
+  height: 40px;
+  line-height: 14px;
+  letter-spacing: 1.2px;
+  transition: 0.2s 0.1s;
+  background-image: linear-gradient(73.1deg, #4a8bed 8%, #4a8bed 86.9%);
+  border: 0 solid;
+  overflow: hidden;
+  cursor: pointer;
+  font-size: 18px;
+  width: 150px;
+  border-radius: 0.25rem;
+  margin-top: 10px;
+  padding-left: 25px;
+  padding-right: 25px;
+  color: #fff;
+  -webkit-clip-path: polygon(
+    0 0,
+    0 0,
+    100% 0,
+    100% 0,
+    100% calc(100% - 15px),
+    calc(100% - 15px) 100%,
+    15px 100%,
+    0 100%
+  );
+  clip-path: polygon(
+    0 0,
+    0 0,
+    100% 0,
+    100% 0,
+    100% calc(100% - 15px),
+    calc(100% - 15px) 100%,
+    15px 100%,
+    0 100%
+  );
+}
+
+.call-now-button:hover {
+  transition: all 0.3s ease-in;
+  padding-right: 30px;
+  padding-left: 30px;
+  background: linear-gradient(to right, #4a8bed, #4a8bed);
+}
+.call-now-btn-no-div {
+  display: flex;
+}
+.contact-no-text {
+  font-size: 30px;
+  letter-spacing: 0.5px;
+  color: #4a8bed;
+  font-weight: bold;
+  position: relative;
+  margin-left: 20px;
+  /* top: 3px; */
+}
+
+/* ---------------------- */
+.others-services-container-bg {
+  background: white;
+  height: 82vh;
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+}
+.common-service-banner-img-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* border: 1px solid yellow; */
+}
+.common-service-banner-content {
+  padding-left: 40px !important;
+}
+.common-service-banner-content h1 {
+  color: black;
+  text-shadow: 1px 1px 2px rgba(48, 48, 48, 0.336);
+}
+.banner-schedule-card-title2 {
+  color: black;
+  font-family: HPSimplifiedLight123;
+  margin-bottom: 10px;
+  text-align: center;
+  font-size: 25px;
+  letter-spacing: 0.5px;
+  text-shadow: 1px 1px 2px rgba(48, 48, 48, 0.336);
+}
+.common-service-banner-content ul li {
+  margin: 30px;
+  color: #666;
+  letter-spacing: 0.5px;
+}
+.common-service-schedule-card-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  color: #fff;
+  margin-top: 50px !important;
+}
+.banner-price-text {
+  font-size: 20px;
+  letter-spacing: 1px;
+  color: black;
+  text-shadow: 1px 1px 2px rgba(48, 48, 48, 0.336);
+}
+.banner-price {
+  font-size: 22px;
+  letter-spacing: 1px;
+}
+.common-service-banner-img {
+  height: 500px;
+}
+
+.services-container {
+  padding: 42px 0;
+}
+
+.small-title {
+  font-size: 18px;
+  letter-spacing: 1.5px;
+  color: #4a8bed !important;
+}
+
+.service-offer-content {
+  margin-bottom: 60px;
+}
+
+.service-icon {
+  cursor: pointer;
+}
+.service-icon img {
+  max-width: 140px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  height: 120px;
+}
+
+.service-title {
+  font-size: 18px;
+  text-align: center;
+  margin-top: 15px;
+  color: #333;
+}
